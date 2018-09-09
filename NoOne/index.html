@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>JS Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/index.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="javascript/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="javascript/index.js"></script>
+
+<style>
+	*{
+		padding: 0;
+		margin:0;
+	}
+	body{
+		background: #cf263c;
+
+	}
+	.content{
+		padding: 0;
+		margin:0;
+		width: 100%;
+		overflow: hidden;
+	}
+	.content:before{
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	    z-index: -99;
+		content: "";
+		background: url(images/3.jpg);
+		background-repeat: repeat-y;
+		background-size: cover;
+		background-position: center 0;
+		min-width: 1200px;
+		min-height: 1400px;
+		width: 100%;
+	   	height: 100%;
+	    opacity: 0.75;
+	    /*-webkit-filter: blur(2px);
+        filter: blur(2px);*/
+        /*transform: scale(0.75);*/
+        /*overflow: hidden;*/
+
+	}
+	#aaa{
+		width: 110px;
+		height: 30px;
+		background:#D13EC4;
+		border-radius:15px;
+		-webkit-border-radius:15px;
+		-moz-border-radius:15px;
+		}
+	li{
+		list-style: none;
+	}
+</style>
+
+</head>
+
+<body>
+	<script>
+	function showTime(){
+    nowtime=new Date();
+    year=nowtime.getFullYear();
+    month=nowtime.getMonth()+1;
+    date=nowtime.getDate();
+    document.getElementById("topTime").innerText=year+"年"+month+"月"+date+"日"+nowtime.toLocaleTimeString();
+}
+
+setInterval("showTime()",1000);
+
+</script>
+	<!--注释-->
+	<div class="content">
+	<!-- 头部 -->
+    <header>
+    	<b id="topTime"></b>
+    	<h1 style="color: #DDDD33;">dota2</h1>
+    	<div class="fire"><h1 >First Blood</h1></div>
+    	<h2>Fight!</h2>
+    	<div>
+    	    <ul id="header-img">
+    		<li class="transLeft"><img src="images/13.jpg" alt="顶端图片" width="150" height="150"></li>
+    		<li class="transLeft"><img src="images/14.jpg" alt="顶端图片" width="150" height="150"></li>
+    		<li class="transRight"><img src="images/15.jpg" alt="顶端图片" width="150" height="150"></li>
+    		<li class="transRight"><img src="images/16.jpg" alt="顶端图片" width="150" height="150"></li>
+    		</ul>
+    	</div>
+    </header>
+    <!--导航栏-->
+    <nav>
+    	<ul>
+    		<li><a href="/"></a></li>
+    	</ul>
+    </nav>
+    <div class="jsTest">
+    	<button id="buttonImgOn" class="button-js" type="text" >启动</button>
+    	<button id="buttonImgOff" class="button-js" type="text">关闭</button>
+    </div>
+    <section id="userSection">
+    		<h1>用户登陆</h1>
+			<form action="" method="" class="userForm">
+				<span>用户名</span><input id="inUser" type="text" name="user" placeholder="username"><br>
+				<span>密 码</span><input id="inPassword" type="password" name="password" placeholder="password"><br>
+				<input id="inUserSubmit" type="submit" value="提交">
+
+			</form>
+    </section>
+    <div id="">
+        <div class="imgArea">
+    	<div id="imgChange">
+            <ul>
+                <li><img src="images/change/1.jpg" alt=""></li>
+                <li><img src="images/change/2.jpg" alt=""></li>
+                <li><img src="images/change/3.jpg" alt=""></li>
+                <li><img src="images/change/4.jpg" alt=""></li>
+            </ul>
+    	</div>
+        </div>
+    </div>
+    <button id="aaa"  onclick="aaa()">点击</button>
+
+
+    <footer></footer>
+
+    </div>
+
+
+</body>
+</html>
