@@ -31,7 +31,7 @@
 	    left: 0;
 	    z-index: -99;
 		content: "";
-		background: url(images/3.jpg);
+		background: url(images/bg/1.jpg);
 		background-repeat: repeat-y;
 		background-size: cover;
 		background-position: center 0;
@@ -47,15 +47,43 @@
 
 	}
 	#aaa{
+		padding: 0;
+		}
+	.aaa{
 		width: 110px;
 		height: 30px;
 		background:#D13EC4;
 		border-radius:15px;
 		-webkit-border-radius:15px;
 		-moz-border-radius:15px;
-		}
+	}
 	li{
 		list-style: none;
+	}
+
+/*清除浮动*/
+	.clearfix{
+		zoom:1;
+	}
+	.clearfix:after{
+		display: block;
+		visibility: hidden;
+		content: "";
+		height: 0;
+		clear: both;
+	}
+
+	button{
+		width: 110px;
+		height: 30px;
+		background:#D13EC4;
+		border-radius:15px;
+		-webkit-border-radius:15px;
+		-moz-border-radius:15px;
+	}
+	button:hover{
+		background: #D14469;
+		opacity: 0.95;
 	}
 </style>
 
@@ -75,13 +103,28 @@ setInterval("showTime()",1000);
 
 </script>
 	<!--注释-->
-	<div class="content">
+	<div class="content clearfix">
+	<!-- 导航栏 -->
+	<nav>
+	<ul>
+		<li><a href="">首页</a></li>
+		<li><a href="">音乐</a></li>
+		<li><a href="">运动</a></li>
+		<li><a href="">用户</a></li>
+		<li><a href="">关于</a></li>
+	</ul>
+	<ul>
+		<li><button>登录</button></li>
+		<li><button>注册</button></li>
+	</ul>
+	</nav>
 	<!-- 头部 -->
     <header>
+
     	<b id="topTime"></b>
     	<h1 style="color: #DDDD33;">dota2</h1>
     	<div class="fire"><h1 >First Blood</h1></div>
-    	<h2>Fight!</h2>
+    	<h1>Fight!</h1>
     	<div>
     	    <ul id="header-img">
     		<li class="transLeft"><img src="images/13.jpg" alt="顶端图片" width="150" height="150"></li>
@@ -91,25 +134,20 @@ setInterval("showTime()",1000);
     		</ul>
     	</div>
     </header>
-    <!--导航栏-->
-    <nav>
-    	<ul>
-    		<li><a href="/"></a></li>
-    	</ul>
-    </nav>
+
     <div class="jsTest">
     	<button id="buttonImgOn" class="button-js" type="text" >启动</button>
     	<button id="buttonImgOff" class="button-js" type="text">关闭</button>
     </div>
-    <section id="userSection">
+    <!-- <section id="userSection">
     		<h1>用户登陆</h1>
 			<form action="" method="" class="userForm">
 				<span>用户名</span><input id="inUser" type="text" name="user" placeholder="username"><br>
 				<span>密 码</span><input id="inPassword" type="password" name="password" placeholder="password"><br>
-				<input id="inUserSubmit" type="submit" value="提交">
+				<input id="inUserSubmit" type="submit" value="提交" style="width: 80px">
 
 			</form>
-    </section>
+    </section> -->
     <div id="">
         <div class="imgArea">
     	<div id="imgChange">
@@ -122,8 +160,7 @@ setInterval("showTime()",1000);
     	</div>
         </div>
     </div>
-    <button id="aaa"  onclick="aaa()">点击</button>
-
+    <button id="aaa" class="aaa" onclick="aaa()">点击</button>
 
     <footer></footer>
 
