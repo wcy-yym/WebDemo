@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>positon</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		font-size: 1.5em;
+	}
+
+	#a{
+		/*position: absolute;*/
+		left: 300px;
+		top: 300px;
+		margin-top: 100px;
+		height: 400px;
+		width: 400px;
+		background: #fff000;
+	}
+	#b{
+		display: inline-block;
+		position: /*absolute*/;
+		top: -0px;
+		left: 0px;
+		height: 400px;
+		width: 400px;
+		background: #00ff00;
+
+	}
+	#c{
+		position: relative;
+		height: 400px;
+		width: 400px;
+		background: #0000ff;
+	}
+
+	#father{
+		position: relative;
+		top: 300px;
+		left: 400px;
+		/*margin: -400px 0 0 -400px;*/
+		width: 800px;
+		height: 1800px;
+		background: #FF0000;
+	}
+	#child{
+		/*position: absolute;*/
+		visibility: hidden;
+		top: 100px;
+		left: 100px;
+		width: 300px;
+		height: 300px;
+		background: #0000ff;
+	}
+	#n{
+		position: absolute;
+		top: 200px;
+		left: 300px;
+		width: 150px;
+		height: 150px;
+		background: #0ff000;
+	}
+	#m{
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 200px;
+		height: 200px;
+		background: #000000;
+	}
+
+	.clearfix{
+		zoom:1;
+	}
+	.clearfix:after{
+		content: "";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+
+	#nav{
+		position: fixed;
+		top: 0;
+		z-index: 1;
+		margin: 0;
+		padding: 10px;
+		/*height: 100px;*/
+		width: 100%;
+		background: #cc0000;
+		/*opacity: 0.7;*/
+		font-size: 2em;
+		
+	}
+	#nav ul{
+		float: right;
+		list-style: none;
+	}
+	#nav ul li{
+		float: left;
+		width: 150px;
+	}
+
+</style>
+</head>
+
+<body>
+<div id="nav">
+	<ul>
+		<li><a href="">首页</a></li>
+		<li><a href="">音乐</a></li>
+		<li><a href="">运动</a></li>
+		<li><a href="">用户</a></li>
+		<li><a href="">关于</a></li>
+	</ul>
+</div>
+<div id="" class="clearfix">
+    <div id="a">a</div>
+    <span>hello</span>
+    <span id="b">b</span>
+    <div id="c">c</div>
+</div>
+    <div id="father" class="clearfix">
+    	<div id="child"><b>child</b></div>
+    	<div id="n"></div>
+    	<div id="m"></div>
+    </div>
+</body>
+</html>
