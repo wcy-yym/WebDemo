@@ -12,6 +12,18 @@
 <script type="text/javascript" src="javascript/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
 <style>
+*{
+	margin: 0;
+	padding: 0;
+}
+.container {
+    padding-right: 0px;
+    padding-right: 0px;
+}
+  /* [class*='col-'] {
+        padding-left: 0px;
+        padding-right: 0;
+    }*/
 
 </style>
 </head>
@@ -23,8 +35,17 @@
 			<img alt="" src="images/og_Ms_logo.png" />
 		</div>
 		<div class="col-md-4 column" style="padding: 36px 30px 0 0 ;">
-			<button class="btn-primary btn-serch">搜索</button>
-			<input type="text" class="form-control input-blk" placeholder="Search">
+			<!-- <button class="btn-primary btn-search">搜索</button>
+			<input type="text" class="form-control input-blk" placeholder="Search"> -->
+			<div class="input-group">
+						<!-- <span class="input-group-btn">
+							<button class="btn btn-default btn-search02" type="button" style="">
+								<img src="images/search1.png" alt="搜索" width="16px" height="16px" >
+							</button>
+						</span> -->
+						<input type="submit" value="" class="form-control input-blk" style="margin-left: 15px;width: 32px;background: rgba(0, 0, 0, 0.6) url(images/search1.png) no-repeat;border-top-left-radius: 12px;border-bottom-left-radius: 12px"">
+						<input type="text" class="form-control input-blk" style="width: 300px;border-top-right-radius: 12px;border-bottom-right-radius: 12px">
+					</div>
 		</div>
 	</div>
 	<div class="row clearfix">
@@ -41,9 +62,6 @@
 				</li>
 				<li>
 					 <a href="#">Solutions</a>
-				</li>
-				<li>
-					 <a href="#">Case Studies</a>
 				</li>
 				<li>
 					 <a href="#">Case Studies</a>
@@ -112,10 +130,11 @@
 			</div>
 		</div>
 	</div>
-	<div class="row clearfix" style="margin: 10px 0; padding: 0;color: #FFFFFF;">
-		<div class="col-md-4 column bgOpacity" style="">
-			<h2 style="color: #ffffff;">Welcome to Orange Monster</h2>
-			<p>
+	<div class="row clearfix" style="margin: 10px 0px; padding: 0;color: #FFFFFF;">
+		<div class="col-md-4 column" style="">
+			<div class="bgOpacity">
+				<h2 style="color: #ffffff;">Welcome to Orange Monster</h2>
+				<p>
 				Welcome to <em>Orange Monster</em>
 				Welcome to Orange Monster
 				Welcome to Orange Monster
@@ -124,18 +143,24 @@
 
 			</p>
 			<button class="btn btn-primary">Click Me</button>
+			</div>
 		</div>
-		<div class="col-md-4 column bgOpacity" style="text-align: center;">
-			<img alt="140x140" src="images/ogMs_feat1.png" />
-			<img alt="140x140" src="images/ogMs_feat2.png" />
+		<div class="col-md-4 column" style="text-align: center;">
+			<div class="bgOpacity">
+				<img alt="140x140" src="images/ogMs_feat1.png" />
+				<img alt="140x140" src="images/ogMs_feat2.png" />
+			</div>
 		</div>
-		<div class="col-md-4 column bgOpacity">
-			<h3 style="color: #F2941E;">Pellentesque habitant morbi</h3>
-			<p>
+		<div class="col-md-4 column" style="">
+			<div class="bgOpacity">
+				<h3 style="color: #F2941E;">Pellentesque habitant morbi</h3>
+				<p>
 				tristique senectus et netus te malesuada fames ac turpis egestas.Duis aru enim,ultrices nec molis commodo,<em>lobortis quis neque</em>.Duis consequat diam eu ipsum volutpat pulcinar.Quisque venenatis laoreet ligula vel ultnces.
+				</p>
+			</div>
 		</div>
 	</div>
-	<div class="row clearfix" style="margin: 10px 0;height: 150px; background: #F7941E">
+	<div class="row clearfix" style="margin: 10px 0;height: 150px; background: #F7941E; padding-left: 5px;">
 		<div class="col-md-8 column bottom-ifo">
 			<ul>
 				<li>
