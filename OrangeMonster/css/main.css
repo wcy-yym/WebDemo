@@ -17,17 +17,22 @@
 	background: rgba(0, 0, 0, 0.6);
 	border-radius: 8px;
 }
-
+.submit-blk{
+	width: 32px !important;
+	background: rgba(0, 0, 0, 0.6) url(../images/search1.png) no-repeat;
+	border-top-left-radius: 12px;
+	border-bottom-left-radius: 12px;
+	border: 1px solid #000000;
+}
 .input-blk{
-	/*width: 300px;*/
+	width: 300px !important;
 	/*padding-left: 10px;*/
 	/*border-radius: 5px;*/
-	padding-left: 30px;
 	background: rgba(0, 0, 0, 0.6);
 	font-size: 1.2em;
-	/*background: url(../images/search1.png) no-repeat;*/
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
 	border: 1px solid #000000;
-	float: left;
 	color: #ffffff;
 }
 
